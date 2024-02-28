@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "MSALTokenHandler"
+version = "2024.3"
+dependencies = [
+  "msal",
+]
+requires-python=">=3.12"
+authors = [
+    {name = "Chris Akers", email = "chris.j.akers@gmail.com"},
+    ]
+maintainers = [
+    {name = "Chris Akers", email = "chris.j.akers@gmail.com"},
+    ]
+description = "Handles automatic retrieval of Microsoft Graph MSAL tokens and local storage of refresh tokens for subsequent logons."
+readme = "README.md"
+licence = {text = "MIT licence"}
+keywords = ["msal", "Microsoft Graph", "msal access token"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    ]
+[project.urls]
+Repository = "https://github.com/chris-j-akers/MSALTokenHandler"
+
