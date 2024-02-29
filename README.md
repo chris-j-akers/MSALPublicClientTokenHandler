@@ -33,9 +33,9 @@ Create a new instance of the MSALPublicClientTokenHandler and call `get_token()`
 from MSALPublicClientTokenHandler import MSALPublicClientTokenHandler as TokenHandler
 
 token_handler = TokenHandler(app_name='my-app',
-                            client_id="12345678-abcd-9123-dcba-abcdef123456",
-                            authority='https://login.microsoftonline.com/consumers',
-                            db_filepath='./token.db')
+                             client_id="12345678-abcd-9123-dcba-abcdef123456",
+                             authority='https://login.microsoftonline.com/consumers',
+                             db_filepath='./token.db')
 
 token = token_handler.get_token()
 ```
