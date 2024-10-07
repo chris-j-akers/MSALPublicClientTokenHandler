@@ -2,6 +2,8 @@
 
 The `MSALPublicClientTokenHandler` class handles re-authentication using persisted refresh tokens so that authentication is only required the first time a Python script runs. You should only be asked to re-authenticate if it can't receive a token from the MSAL cache or if it doesn't have a working refresh token in storage.
 
+**This class requires MSAL. For a token handler that doesn't require MSAL, see here: https://github.com/chris-j-akers/OneDriveTokenHandler/tree/master**
+
 It's a pretty simple wrapper class that attempts to retrieve tokens, using methods provided by `MSAL` in this order:
 
 1. Directly from the `MSAL` cache
